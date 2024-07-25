@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/gif" href="./images/confetti.png"
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy birthday hala!</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      @font-face { font-family: AngelBread; src: url('./fonts/Angel Bread 400.otf'); }
+      @font-face { font-family: AngelBread; font-weight: bold; src: url('./fonts/Angel Bread 400.otf');}
+      h1 {
+        text-align: center;
+        color: white;
+        font-family: AngelBread, sans-serif;
+      }
+      h3 {
+        text-align: center;
+        color: white;
+        font-family: helvetica, sans-serif;
+      }
+      #play {
+        font-family: helvetica, sans-serif;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        font-size: 16px;
+        border: 2px solid #f44336;
+      }
+      #play:hover {
+        background-color: #f44336;
+        color: white;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+      .a { font-family: helvetica, sans-serif; color:white;}
+    </style>
+  </head>
+  <body>
+      <h1>happy birthday hala!!!</h1>
+      <bold><h3>silly cat says happy birthday :3</h3></bold>
+      <div class="center">
+        <video width="320" height="240" id="sillybilly">
+          <source src="images/sillybilly.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      </div>
+      <br />
+      <div class="center">
+      <button id="play">Thank Silly Cat :3</button>
+      </div>
+      <div class="center">
+        <br />
+        <br />
+        <p class="a">
+          from <a href="https://www.instagram.com/ocrovest/">ocro</a>
+        </p>
+      </div>
+      <script>
+      const playButton = document.getElementById('play');
+      const video = document.getElementById('sillybilly');
+
+      playButton.addEventListener('click', () => {
+        video.play();
+      });
+
+      </script>
+  </body>
+</html>
